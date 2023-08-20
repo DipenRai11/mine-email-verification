@@ -1,0 +1,15 @@
+package com.email.registration;
+
+import org.springframework.stereotype.Service;
+
+import java.util.function.Predicate;
+
+@Service
+
+public class EmailValidator implements Predicate<String > {
+    @Override
+    public boolean test(String s) {
+//todo:Regex to valid email
+        return true;
+    }
+}
